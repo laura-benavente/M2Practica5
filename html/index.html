@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web completa</title> 
+    <meta name="description" content="Práctica 5 HTML5, CSS3, JS"> 
+    <meta name="keywords" content="HTML5, CSS3, práctica">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lorem Ipsum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="servicios.html">Nuestros Servicios</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <article id="presentacion">
+            <h2>Presentación</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        </article>
+
+        <article id="informacion">
+            <h2>Más información</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+
+        <article id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
+    </section>
+    <img src="../media/img/informacion.jpg" alt="Imagen de información" width="300" height="300">
+
+    <section class="table-section"></section>
+        <h2>Tabla de información Lorem Ipsum </h2>
+        <table>
+            <caption>Lorem Ipsum</caption>
+            <thead>
+                <tr>
+                    <th>LOREM</th>
+                    <th>IPSUM</th>
+                    <th>DOLOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor</td>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <aside>
+        <h3>¡Contacta conmigo!</h3>
+        <form action="https://httpbin.org/post" method="POST">
+            <fieldset>
+                <legend>Contacto</legend> 
+                <div class="form-group"> 
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form-group"> 
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label>Género:</label>
+                </div>
+                <label> Masculino <input type="radio" name="genero" value="masculino"></label>
+                <label> Femenino <input type="radio" name="genero" value="femenino"></label>
+                <label> Otro <input type="radio" name="genero" value="otro"></label>
+                <div class="form-group">
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa:</label> 
+                    <input type="text" id="empresa" name="empresa" placeholder="Introduce tu empresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="sector">Sector Profesional:</label> 
+                    <select id="sector" name="sector" required>
+                        <option value="sector1">FrontEnd</option>
+                        <option value="sector2">BackEnd</option>
+                        <option value="sector3">Data Analyst</option>
+                        <option value="sector4">Marketing</option>
+                    </select>
+                </div>
+                <label> Acepto las condiciones <input type="checkbox" name="condiciones" required> </label>
+            </fieldset>
+            <button type="submit">Enviar</button> 
+            <button type="reset">Reiniciar</button>
+        </form>
+    </aside>
+
+    <footer>
+        <a href="https://twitter.com" target="_blank">
+            <img src="../media/img/twitter.png" alt="Twitter Logo">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+            <img src="../media/img/linkedin.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="../media/img/instagram.png" alt="Instagram Logo">
+        </a>
+    </footer>
+</body>
+</html>

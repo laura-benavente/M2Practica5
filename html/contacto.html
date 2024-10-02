@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title> 
+    <meta name="description" content="Formulario de Contacto"> 
+    <meta name="keywords" content="Formulario, Contacto">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <section class="main-content">
+        <aside>
+            <h3>¡Contacta conmigo!</h3>
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <legend>Contacto</legend> 
+                    <div class="form-group"> 
+                        <label for="nombre">Nombre:</label> 
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Género:</label>
+                    </div>
+                    <label> Masculino <input type="radio" name="genero" value="masculino"></label>
+                    <label> Femenino <input type="radio" name="genero" value="femenino"></label>
+                    <label> Otro <input type="radio" name="genero" value="otro"></label>
+                    <div class="form-group">
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label> 
+                        <input type="text" id="empresa" name="empresa" placeholder="Introduce tu empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Sector Profesional:</label> 
+                        <select id="sector" name="sector" required>
+                            <option value="sector1">FrontEnd</option>
+                            <option value="sector2">BackEnd</option>
+                            <option value="sector3">Data Analyst</option>
+                            <option value="sector4">Marketing</option>
+                        </select>
+                    </div>
+                    <label> Acepto las condiciones <input type="checkbox" name="condiciones" required> </label>
+                </fieldset>
+                <button type="submit">Enviar</button> 
+                <button type="reset">Reiniciar</button>
+            </form>
+        </aside>
+    </section>
+
+</body>
+</html>
